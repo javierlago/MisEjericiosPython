@@ -3,4 +3,4 @@
 # y muestre por pantalla la frase invertida.
 
 frase = input("Introduzca frase")
-print(frase.re)
+print(frase[::-1])
