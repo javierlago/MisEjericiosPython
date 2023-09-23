@@ -8,7 +8,7 @@ cesta = input("Indique productos separados por coma")
 # puede hacer sin convertir en un array
 cestaotrasolucion = cesta
 
-cesta = cesta.split(",") #convierto en un array
+cesta = cesta.split(",") #convierto en un array dividido por las comas
 
 for i in range(len(cesta)):
     print(cesta[i])
