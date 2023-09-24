@@ -16,3 +16,26 @@
 # Meritorio	0.6 o más
 # Escribir un programa que lea la puntuación del usuario e indique
 # su nivel de rendimiento, así como la cantidad de dinero que recibirá el usuario.
+
+puntuacion = float(input("Indique su puntuacion"))
+inaceptable = 0.0
+aceptable = 0.4
+meritorio = 0.6
+dinero = int(2400)
+
+if puntuacion == inaceptable:
+    nivel = "Inaceptable"
+elif puntuacion == aceptable:
+    nivel = "Aceptable"
+elif puntuacion >= meritorio:
+    nivel = "Meritorio"
+else:
+    nivel = ""
+
+if nivel == "":
+    print("puntuaciacion incorrecta")
+else:
+    print("Tu nivel es %s" % nivel)
+    print("T bonificacion es de %.2f€" %(puntuacion*2400))
+
+
